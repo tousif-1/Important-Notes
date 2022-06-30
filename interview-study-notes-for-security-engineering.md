@@ -162,24 +162,24 @@ Where did these notes come from? See the [README](README.md).
 
 - DNS configs: DNS records
 	- Start of Authority (SOA).
-	- 	Primary name server
-	- 	Email of admin
-	- 	Domain Serial number
-	- 	Declares the most authoritative host for the zone. Every zone file should include an SOA record, which is generated automatically when the user adds a zone.
+		- Primary name server
+		- Email of admin
+		- Domain Serial number
+		- Declares the most authoritative host for the zone. Every zone file should include an SOA record, which is generated automatically when the user adds a zone.
 	- IP addresses (A and AAAA).
-	- 	Maps IP address to a name
+		- Maps IP address to a name
 	- SMTP mail exchangers (MX).
-	- 	Smallest priority sent first
-	- 	Permits mail to be sent to the right mail servers located in the domain. Other than IP addresses, MX records include fully-qualified domain names.
+		- Smallest priority sent first
+		- Permits mail to be sent to the right mail servers located in the domain. Other than IP addresses, MX records include fully-qualified domain names.
 	- Name servers (NS).
-	- 	Describes a name server for the domain that permits DNS lookups within several zones. Every primary as well as secondary name server must be reported via this record.
+		- Describes a name server for the domain that permits DNS lookups within several zones. Every primary as well as secondary name server must be reported via this record.
 	- Pointers for reverse DNS lookups (PTR).
-	- 	maps an IP address to the host name in order to do reverse lookups
+		- maps an IP address to the host name in order to do reverse lookups
 	- Domain name aliases (CNAME) Canonical Name.
-	- 	Points to a A or AAAA record
-	- 	 Can be used to set an alias for the host name
+		- Points to a A or AAAA record
+		- Can be used to set an alias for the host name
 	- Service Records (SRV)
-	- 
+		-specifies a host and port for specific services such as voice over IP (VoIP), instant messaging, 
  Reference: https://www.youtube.com/watch?v=cwT82ibOM2Q&t=937s
 - ARP
 	- Pair MAC address with IP Address for IP connections. 
