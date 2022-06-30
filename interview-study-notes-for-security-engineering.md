@@ -160,14 +160,27 @@ Where did these notes come from? See the [README](README.md).
 	- 26856485f6476a567567c6576e678.badguy.com
 	- Doesn’t show up in http logs. 
 
-- DNS configs
+- DNS configs: DNS records
 	- Start of Authority (SOA).
+	- 	Primary name server
+	- 	Email of admin
+	- 	Domain Serial number
+	- 	Declares the most authoritative host for the zone. Every zone file should include an SOA record, which is generated automatically when the user adds a zone.
 	- IP addresses (A and AAAA).
+	- 	Maps IP address to a name
 	- SMTP mail exchangers (MX).
+	- 	Smallest priority sent first
+	- 	Permits mail to be sent to the right mail servers located in the domain. Other than IP addresses, MX records include fully-qualified domain names.
 	- Name servers (NS).
+	- 	Describes a name server for the domain that permits DNS lookups within several zones. Every primary as well as secondary name server must be reported via this record.
 	- Pointers for reverse DNS lookups (PTR).
-	- Domain name aliases (CNAME).
- 
+	- 	maps an IP address to the host name in order to do reverse lookups
+	- Domain name aliases (CNAME) Canonical Name.
+	- 	Points to a A or AAAA record
+	- 	 Can be used to set an alias for the host name
+	- Service Records (SRV)
+	- 
+ Reference: https://www.youtube.com/watch?v=cwT82ibOM2Q&t=937s
 - ARP
 	- Pair MAC address with IP Address for IP connections. 
 
