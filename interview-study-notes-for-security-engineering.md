@@ -182,7 +182,18 @@ Where did these notes come from? See the [README](README.md).
 		-specifies a host and port for specific services such as voice over IP (VoIP), instant messaging, 
  Reference: https://www.youtube.com/watch?v=cwT82ibOM2Q&t=937s
 - ARP
-	- Pair MAC address with IP Address for IP connections. 
+	- Address Resolution Protocol
+	- Pair MAC address with IP Address for IP connections.
+	- For IPv4 only
+	- command: arp -a
+- Neighbor Discovery Protocol
+	- Link layer
+	- ICMP v6
+	- without DHCP
+	- Address resolution
+	- Neighbor Unreachability Detection
+	- Duplicate address Detection
+
 
 - DHCP
 	- UDP (67 - Server, 68 - Client)
